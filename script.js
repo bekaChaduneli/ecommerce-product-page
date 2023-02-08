@@ -138,7 +138,7 @@ right.addEventListener("click", () => {
     if(countImage < 4){
         countImage++;
     }
-    images.src = `images/image-product-${countImage}.jpg`;
+    images.src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${countImage}.jpg`;
 })
 
 // previous image
@@ -146,7 +146,7 @@ left.addEventListener("click", () => {
     if(countImage>1){
         countImage--;
     }
-    images.src = `images/image-product-${countImage}.jpg`;
+    images.src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${countImage}.jpg`;
     
 });
 
@@ -181,13 +181,13 @@ for(let i = 0; i < 4; i++) {
         miniImage[2].classList.remove("mini-image-hover");
         miniImage[3].classList.remove("mini-image-hover");
         miniImage[i].classList.add("mini-image-hover");
-        mainImage.src = `http://127.0.0.1:3000/images/image-product-${i+1}.jpg`
+        mainImage.src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${i+1}.jpg`
     });
     // add main image box on middle of screen
     mainImage.addEventListener("click",() => {
         document.querySelector(".absolute-desktop-images-box").style.display = "flex";
         document.querySelector(".desktop-background").style.width = "100%";
-        document.querySelector(".absolute-desktop-images-main-image").src = `http://127.0.0.1:3000/images/image-product-${absoluteCount}.jpg`;
+        document.querySelector(".absolute-desktop-images-main-image").src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${absoluteCount}.jpg`;
         
     });
 }
@@ -200,7 +200,7 @@ for(let i = 0; i < 4; i++) {
         absoluteImages[2].classList.remove("mini-image-hover");
         absoluteImages[3].classList.remove("mini-image-hover");
         absoluteImages[i].classList.add("mini-image-hover");
-        document.querySelector(".absolute-desktop-images-main-image").src = `http://127.0.0.1:3000/images/image-product-${i+1}.jpg`
+        document.querySelector(".absolute-desktop-images-main-image").src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${i+1}.jpg`
     });
 }
 
@@ -212,7 +212,7 @@ absoluteLeft.addEventListener("click", () => {
     if(absoluteCount == 0) {
         absoluteCount = 4;
     }
-    document.querySelector(".absolute-desktop-images-main-image").src = `http://127.0.0.1:3000/images/image-product-${absoluteCount}.jpg`;
+    document.querySelector(".absolute-desktop-images-main-image").src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${absoluteCount}.jpg`;
     absoluteImages[0].classList.remove("mini-image-hover");
     absoluteImages[1].classList.remove("mini-image-hover");
     absoluteImages[2].classList.remove("mini-image-hover");
@@ -227,7 +227,7 @@ absoluteRight.addEventListener("click", () => {
     if(absoluteCount == 5) {
         absoluteCount = 1;
     }
-    document.querySelector(".absolute-desktop-images-main-image").src = `http://127.0.0.1:3000/images/image-product-${absoluteCount}.jpg`;
+    document.querySelector(".absolute-desktop-images-main-image").src = `https://bekachaduneli.github.io/ecommerce-product-page/images/image-product-${absoluteCount}.jpg`;
     absoluteImages[0].classList.remove("mini-image-hover");
     absoluteImages[1].classList.remove("mini-image-hover");
     absoluteImages[2].classList.remove("mini-image-hover");
