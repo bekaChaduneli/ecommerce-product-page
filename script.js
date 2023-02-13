@@ -123,6 +123,8 @@ manu.addEventListener('click', () => {
     background.classList.add("first-background-transition");
     background.classList.remove("background-transition");
     contents.classList.remove("transition-content");
+    document.body.classList.add("overflow");
+
 });
 
 // close mobile manu
@@ -131,6 +133,7 @@ close.addEventListener("click", ()=> {
     contents.classList.remove("first-transition-content");
     background.classList.add("background-transition");
     contents.classList.remove("first-transition-content");
+    document.body.classList.remove("overflow");
 });
 
 // next image
