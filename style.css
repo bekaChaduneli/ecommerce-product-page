@@ -489,7 +489,7 @@ body {
         width: 445px;
     }
     .third-conteiner-third-box {
-        width: 445px;
+        min-width: 485px;
         display: flex;
         flex-direction: row;
         align-items: center;
