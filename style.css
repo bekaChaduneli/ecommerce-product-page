@@ -489,11 +489,11 @@ body {
         width: 445px;
     }
     .third-conteiner-third-box {
-        min-width: 485px;
+        width: 475px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .third-conteiner-second-box {
@@ -502,12 +502,13 @@ body {
     }
 
     .numbers-box {
-        width: 40%;
+        width: 200px;
         margin-top: -40px;
     }
 
     .add-to-cart-box {
-        width: 60%;
+        width: 240px;
+        margin-top: 18px;
     }
     .third-conteiner-headline {
         font-size:13px;
