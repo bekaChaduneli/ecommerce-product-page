@@ -1,117 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | E-commerce product page</title>
-</head>
-<body>
-  <div class = "desktop-background"></div>
-  <div class = "absolute-desktop-images-box">
-    <img class = "absolute-close" src = "images/icon-close.svg">
-    <div class = "absolute-buttons">
-      <div class = "absolute-button-left"><img class="left" src = "images/icon-previous.svg"></div>
-      <div class = "absolute-button-right"><img class="right" src = "images/icon-next.svg"></div>
-    </div>
-    <img class = "absolute-desktop-images-main-image" src = "images/image-product-1.jpg">
-    <div class = "absolute-desktop-mini-images-box">
-      <img class = "absolute-mini-image" id = "1" src = "images/image-product-1-thumbnail.jpg">
-      <img class = "absolute-mini-image" id = "2" src = "images/image-product-2-thumbnail.jpg">
-      <img class = "absolute-mini-image" id = "3" src = "images/image-product-3-thumbnail.jpg">
-      <img class = "absolute-mini-image" id = "4" src = "images/image-product-4-thumbnail.jpg">
-    </div>
-  </div>
-  <div class = "background"></div>
-  <div class = "manu-conteiner">
-    <img src = "images/icon-close.svg" class = "close">
-    <div class = "contents">
-      <span class = "content">Collections</span>
-      <span class = "content">Men</span>
-      <span class = "content">Women</span>
-      <span class = "content">About</span>
-      <span class = "content">Contact</span>
-    </div>
-  </div>
-  <div class = "header">
-    <div class = "first-conteiner">
-      <div class = "menu-box">
-        <img src = "images/icon-menu.svg" class = "menu">
-        <img src = "images/logo.svg" class = "company-logo">
-      </div>
-      <div class = "desktop-contents">
-        <span class = "desktop-content">Collections <div class = "line"></div></span>
-        <span class = "desktop-content">Men <div class = "line"></div></span>
-        <span class = "desktop-content">Women <div class = "line"></div></span>
-        <span class = "desktop-content">About <div class = "line"></div></span>
-        <span class = "desktop-content">Contact <div class = "line"></div></span>
-      </div>
-      <div class = "logo-box">
-        <div class = "purchise">
-          <div class = "purchise-count">0</div>
-          <img src = "images/icon-cart.svg" class = "card">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="desktop-background"></div>
+    <div class="absolute-desktop-images-box">
+      <img class="absolute-close" src="images/icon-close.svg" />
+      <div class="absolute-buttons">
+        <div class="absolute-button-left">
+          <img class="left" src="images/icon-previous.svg" />
         </div>
-        <img src = "images/image-avatar.png" class = "logo">
-        <div class = "positioning">
-          <div class = "card-box">
-            <div class = "card-text"><span class = "cart">Cart</span></div>
-            <div class = "card-content">
-              
+        <div class="absolute-button-right">
+          <img class="right" src="images/icon-next.svg" />
+        </div>
+      </div>
+      <img
+        class="absolute-desktop-images-main-image"
+        src="images/image-product-1.jpg"
+      />
+      <div class="absolute-desktop-mini-images-box">
+        <img
+          class="absolute-mini-image"
+          id="1"
+          src="images/image-product-1-thumbnail.jpg"
+        />
+        <img
+          class="absolute-mini-image"
+          id="2"
+          src="images/image-product-2-thumbnail.jpg"
+        />
+        <img
+          class="absolute-mini-image"
+          id="3"
+          src="images/image-product-3-thumbnail.jpg"
+        />
+        <img
+          class="absolute-mini-image"
+          id="4"
+          src="images/image-product-4-thumbnail.jpg"
+        />
+      </div>
+    </div>
+    <div class="background"></div>
+    <div class="manu-conteiner">
+      <img src="images/icon-close.svg" class="close" />
+      <div class="contents">
+        <span class="content">Collections</span>
+        <span class="content">Men</span>
+        <span class="content">Women</span>
+        <span class="content">About</span>
+        <span class="content">Contact</span>
+      </div>
+    </div>
+    <div class="header">
+      <div class="first-conteiner">
+        <div class="menu-box">
+          <img src="images/icon-menu.svg" class="menu" />
+          <img src="images/logo.svg" class="company-logo" />
+        </div>
+        <div class="desktop-contents">
+          <span class="desktop-content"
+            >Collections
+            <div class="line"></div
+          ></span>
+          <span class="desktop-content"
+            >Men
+            <div class="line"></div
+          ></span>
+          <span class="desktop-content"
+            >Women
+            <div class="line"></div
+          ></span>
+          <span class="desktop-content"
+            >About
+            <div class="line"></div
+          ></span>
+          <span class="desktop-content"
+            >Contact
+            <div class="line"></div
+          ></span>
+        </div>
+        <div class="logo-box">
+          <div class="purchise">
+            <div class="purchise-count">0</div>
+            <img src="images/icon-cart.svg" class="card" />
+          </div>
+          <img src="images/image-avatar.png" class="logo" />
+          <div class="positioning">
+            <div class="card-box">
+              <div class="card-text"><span class="cart">Cart</span></div>
+              <div class="card-content"></div>
+              <span class="empty">Your cart is empty.</span>
             </div>
-            <span class = "empty">Your cart is empty.</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class = "second-conteiner">
-    <div class = "buttons">
-      <div class = "button-left"><img class="left" src = "images/icon-previous.svg"></div>
-      <div class = "button-right"><img class="right" src = "images/icon-next.svg"></div>
-    </div>
-    <img src = "images/image-product-1.jpg" class = "image">
-    
-  </div>
-  <div class = "box-for-desktop">
-    <div class = "desktop-images-box">
-      <img class = "desktop-images-main-image" src = "images/image-product-1.jpg">
-      <div class = "desktop-mini-images-box">
-        <img class = "mini-image" id="image1" src = "images/image-product-1-thumbnail.jpg">
-        <img class = "mini-image" id="image2" src = "images/image-product-2-thumbnail.jpg">
-        <img class = "mini-image" id="image3" src = "images/image-product-3-thumbnail.jpg">
-        <img class = "mini-image" id="image4" src = "images/image-product-4-thumbnail.jpg">
-      </div>
-    </div>
-    <div class = "third-conteiner">
-      <div class = "third-conteiner-first-box">
-        <span class ="third-conteiner-headline">Sneaker Company</span>
-        <span class = "third-conteiner-text">Fall Limited Edition Sneakers</span>
-        <span class = "third-conteiner-second-text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</span>
-      </div>
-      <div class = "third-conteiner-second-box">
-        <span class = "buying-price-box">
-          <span class = "real-price">$125.00</span>
-          <div class = "discount">50%</div>
-        </span>
-        <div class = "old-price">$250.00</div>
-      </div>
-      <div class = "third-conteiner-third-box">
-        <div class = "numbers-box">
-          <img src = "images/icon-minus.svg" class = "minus">
-          <span class = "count">0</span>
-          <img src = "images/icon-plus.svg" class = "plus">
+
+    <div class="second-conteiner">
+      <div class="buttons">
+        <div class="button-left">
+          <img class="left" src="images/icon-previous.svg" />
         </div>
-        <button class = "add-to-cart-box"><img class = "basket" src = "images/icon-cart.svg">Add to cart</button>
+        <div class="button-right">
+          <img class="right" src="images/icon-next.svg" />
+        </div>
+      </div>
+      <img src="images/image-product-1.jpg" class="image" />
+    </div>
+    <div class="box-for-desktop">
+      <div class="desktop-images-box">
+        <img
+          class="desktop-images-main-image"
+          src="images/image-product-1.jpg"
+        />
+        <div class="desktop-mini-images-box">
+          <img
+            class="mini-image"
+            id="image1"
+            src="images/image-product-1-thumbnail.jpg"
+          />
+          <img
+            class="mini-image"
+            id="image2"
+            src="images/image-product-2-thumbnail.jpg"
+          />
+          <img
+            class="mini-image"
+            id="image3"
+            src="images/image-product-3-thumbnail.jpg"
+          />
+          <img
+            class="mini-image"
+            id="image4"
+            src="images/image-product-4-thumbnail.jpg"
+          />
+        </div>
+      </div>
+      <div class="third-conteiner">
+        <div class="third-conteiner-first-box">
+          <span class="third-conteiner-headline">Sneaker Company</span>
+          <span class="third-conteiner-text"
+            >Fall Limited Edition Sneakers</span
+          >
+          <span class="third-conteiner-second-text"
+            >These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.</span
+          >
+        </div>
+        <div class="third-conteiner-second-box">
+          <span class="buying-price-box">
+            <span class="real-price">$125.00</span>
+            <div class="discount">50%</div>
+          </span>
+          <div class="old-price">$250.00</div>
+        </div>
+        <div class="third-conteiner-third-box">
+          <div class="numbers-box">
+            <img src="images/icon-minus.svg" class="minus" />
+            <span class="count">0</span>
+            <img src="images/icon-plus.svg" class="plus" />
+          </div>
+          <button class="add-to-cart-box">
+            <img class="basket" src="images/icon-cart.svg" />Add to cart
+          </button>
+        </div>
       </div>
     </div>
-    
-  </div>
-  
-  <script src = "script.js"></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
